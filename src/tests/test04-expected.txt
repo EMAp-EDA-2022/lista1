@@ -1,0 +1,887 @@
+size: 0
+insert(ACK, 339): successful
+insert(ACY, 312): successful
+insert(AEX, 154): successful
+insert(AKR, 344): successful
+insert(ALB, 362): successful
+insert(AMA, 220): successful
+insert(ART, 381): successful
+insert(ATL, 189): successful
+insert(AUG, 412): successful
+insert(AUS, 126): successful
+insert(BCT, 49): successful
+insert(BFI, 477): successful
+insert(BFM, 128): successful
+insert(BGR, 409): successful
+insert(BHM, 193): successful
+insert(BLI, 492): successful
+insert(BNA, 257): successful
+insert(BOI, 396): successful
+insert(BOS, 374): successful
+insert(BRO, 31): successful
+insert(BTR, 119): successful
+insert(BUF, 370): successful
+insert(BUR, 217): successful
+insert(BWI, 302): successful
+insert(CBM, 196): successful
+insert(CHA, 233): successful
+insert(CHS, 160): successful
+insert(CIC, 305): successful
+insert(CLE, 343): successful
+insert(CLL, 136): successful
+insert(CLT, 228): successful
+insert(CMH, 312): successful
+insert(CNM, 175): successful
+insert(CNW, 154): successful
+insert(COS, 296): successful
+insert(CPR, 370): successful
+insert(CRP, 61): successful
+insert(CVG, 305): successful
+insert(CYS, 341): successful
+insert(DAL, 164): successful
+insert(DAY, 302): successful
+insert(DCA, 296): successful
+insert(DEN, 313): successful
+insert(DET, 364): successful
+insert(DFW, 168): successful
+insert(DLF, 112): successful
+insert(DLH, 454): successful
+insert(DMA, 170): successful
+insert(DPA, 352): successful
+insert(DRT, 104): successful
+size: 50
+list-by-key1: 
+  (ACK, 339)
+  (ACY, 312)
+  (AEX, 154)
+  (AKR, 344)
+  (ALB, 362)
+  (AMA, 220)
+  (ART, 381)
+  (ATL, 189)
+  (AUG, 412)
+  (AUS, 126)
+  (BCT, 49)
+  (BFI, 477)
+  (BFM, 128)
+  (BGR, 409)
+  (BHM, 193)
+  (BLI, 492)
+  (BNA, 257)
+  (BOI, 396)
+  (BOS, 374)
+  (BRO, 31)
+  (BTR, 119)
+  (BUF, 370)
+  (BUR, 217)
+  (BWI, 302)
+  (CBM, 196)
+  (CHA, 233)
+  (CHS, 160)
+  (CIC, 305)
+  (CLE, 343)
+  (CLL, 136)
+  (CLT, 228)
+  (CMH, 312)
+  (CNM, 175)
+  (CNW, 154)
+  (COS, 296)
+  (CPR, 370)
+  (CRP, 61)
+  (CVG, 305)
+  (CYS, 341)
+  (DAL, 164)
+  (DAY, 302)
+  (DCA, 296)
+  (DEN, 313)
+  (DET, 364)
+  (DFW, 168)
+  (DLF, 112)
+  (DLH, 454)
+  (DMA, 170)
+  (DPA, 352)
+  (DRT, 104)
+list-by-key2: 
+  (BRO, 31)
+  (BCT, 49)
+  (CRP, 61)
+  (DRT, 104)
+  (DLF, 112)
+  (BTR, 119)
+  (AUS, 126)
+  (BFM, 128)
+  (CLL, 136)
+  (AEX, 154)
+  (CNW, 154)
+  (CHS, 160)
+  (DAL, 164)
+  (DFW, 168)
+  (DMA, 170)
+  (CNM, 175)
+  (ATL, 189)
+  (BHM, 193)
+  (CBM, 196)
+  (BUR, 217)
+  (AMA, 220)
+  (CLT, 228)
+  (CHA, 233)
+  (BNA, 257)
+  (COS, 296)
+  (DCA, 296)
+  (BWI, 302)
+  (DAY, 302)
+  (CIC, 305)
+  (CVG, 305)
+  (ACY, 312)
+  (CMH, 312)
+  (DEN, 313)
+  (ACK, 339)
+  (CYS, 341)
+  (CLE, 343)
+  (AKR, 344)
+  (DPA, 352)
+  (ALB, 362)
+  (DET, 364)
+  (BUF, 370)
+  (CPR, 370)
+  (BOS, 374)
+  (ART, 381)
+  (BOI, 396)
+  (BGR, 409)
+  (AUG, 412)
+  (DLH, 454)
+  (BFI, 477)
+  (BLI, 492)
+extract-min-key1: 339
+insert(DSM, 357): successful
+insert(DTW, 363): successful
+insert(DUG, 147): successful
+insert(DYS, 174): successful
+insert(EDW, 206): successful
+insert(EFD, 115): successful
+insert(ELP, 150): successful
+insert(EWR, 325): successful
+insert(EYW, 4): successful
+insert(FAT, 239): successful
+insert(FFO, 304): successful
+insert(FLL, 46): successful
+insert(FMY, 56): successful
+insert(FOE, 297): successful
+insert(FTW, 163): successful
+insert(FXE, 50): successful
+insert(FYV, 252): successful
+insert(GEG, 465): successful
+insert(GLS, 107): successful
+insert(GRB, 404): successful
+insert(GRR, 377): successful
+insert(GSB, 221): successful
+insert(GTF, 465): successful
+insert(GVT, 192): successful
+insert(GVW, 280): successful
+insert(GWO, 196): successful
+insert(HFD, 353): successful
+insert(HMN, 164): successful
+insert(HOU, 103): successful
+insert(HPN, 353): successful
+insert(HRO, 254): successful
+insert(HUF, 315): successful
+insert(HWO, 53): successful
+insert(IAB, 274): successful
+insert(IAD, 292): successful
+insert(IAG, 394): successful
+insert(IAH, 100): successful
+insert(IKK, 341): successful
+insert(ABQ, 233): successful
+insert(ILM, 213): successful
+insert(IND, 313): successful
+insert(INT, 249): successful
+insert(ISP, 322): successful
+insert(JAN, 172): successful
+insert(JAX, 137): successful
+insert(JBR, 232): successful
+insert(JFK, 337): successful
+insert(LAS, 251): successful
+insert(LAX, 181): successful
+insert(LBB, 185): successful
+size: 99
+list-by-key1: 
+  (ABQ, 233)
+  (ACY, 312)
+  (AEX, 154)
+  (AKR, 344)
+  (ALB, 362)
+  (AMA, 220)
+  (ART, 381)
+  (ATL, 189)
+  (AUG, 412)
+  (AUS, 126)
+  (BCT, 49)
+  (BFI, 477)
+  (BFM, 128)
+  (BGR, 409)
+  (BHM, 193)
+  (BLI, 492)
+  (BNA, 257)
+  (BOI, 396)
+  (BOS, 374)
+  (BRO, 31)
+  (BTR, 119)
+  (BUF, 370)
+  (BUR, 217)
+  (BWI, 302)
+  (CBM, 196)
+  (CHA, 233)
+  (CHS, 160)
+  (CIC, 305)
+  (CLE, 343)
+  (CLL, 136)
+  (CLT, 228)
+  (CMH, 312)
+  (CNM, 175)
+  (CNW, 154)
+  (COS, 296)
+  (CPR, 370)
+  (CRP, 61)
+  (CVG, 305)
+  (CYS, 341)
+  (DAL, 164)
+  (DAY, 302)
+  (DCA, 296)
+  (DEN, 313)
+  (DET, 364)
+  (DFW, 168)
+  (DLF, 112)
+  (DLH, 454)
+  (DMA, 170)
+  (DPA, 352)
+  (DRT, 104)
+  (DSM, 357)
+  (DTW, 363)
+  (DUG, 147)
+  (DYS, 174)
+  (EDW, 206)
+  (EFD, 115)
+  (ELP, 150)
+  (EWR, 325)
+  (EYW, 4)
+  (FAT, 239)
+  (FFO, 304)
+  (FLL, 46)
+  (FMY, 56)
+  (FOE, 297)
+  (FTW, 163)
+  (FXE, 50)
+  (FYV, 252)
+  (GEG, 465)
+  (GLS, 107)
+  (GRB, 404)
+  (GRR, 377)
+  (GSB, 221)
+  (GTF, 465)
+  (GVT, 192)
+  (GVW, 280)
+  (GWO, 196)
+  (HFD, 353)
+  (HMN, 164)
+  (HOU, 103)
+  (HPN, 353)
+  (HRO, 254)
+  (HUF, 315)
+  (HWO, 53)
+  (IAB, 274)
+  (IAD, 292)
+  (IAG, 394)
+  (IAH, 100)
+  (IKK, 341)
+  (ILM, 213)
+  (IND, 313)
+  (INT, 249)
+  (ISP, 322)
+  (JAN, 172)
+  (JAX, 137)
+  (JBR, 232)
+  (JFK, 337)
+  (LAS, 251)
+  (LAX, 181)
+  (LBB, 185)
+list-by-key2: 
+  (EYW, 4)
+  (BRO, 31)
+  (FLL, 46)
+  (BCT, 49)
+  (FXE, 50)
+  (HWO, 53)
+  (FMY, 56)
+  (CRP, 61)
+  (IAH, 100)
+  (HOU, 103)
+  (DRT, 104)
+  (GLS, 107)
+  (DLF, 112)
+  (EFD, 115)
+  (BTR, 119)
+  (AUS, 126)
+  (BFM, 128)
+  (CLL, 136)
+  (JAX, 137)
+  (DUG, 147)
+  (ELP, 150)
+  (AEX, 154)
+  (CNW, 154)
+  (CHS, 160)
+  (FTW, 163)
+  (DAL, 164)
+  (HMN, 164)
+  (DFW, 168)
+  (DMA, 170)
+  (JAN, 172)
+  (DYS, 174)
+  (CNM, 175)
+  (LAX, 181)
+  (LBB, 185)
+  (ATL, 189)
+  (GVT, 192)
+  (BHM, 193)
+  (CBM, 196)
+  (GWO, 196)
+  (EDW, 206)
+  (ILM, 213)
+  (BUR, 217)
+  (AMA, 220)
+  (GSB, 221)
+  (CLT, 228)
+  (JBR, 232)
+  (ABQ, 233)
+  (CHA, 233)
+  (FAT, 239)
+  (INT, 249)
+  (LAS, 251)
+  (FYV, 252)
+  (HRO, 254)
+  (BNA, 257)
+  (IAB, 274)
+  (GVW, 280)
+  (IAD, 292)
+  (COS, 296)
+  (DCA, 296)
+  (FOE, 297)
+  (BWI, 302)
+  (DAY, 302)
+  (FFO, 304)
+  (CIC, 305)
+  (CVG, 305)
+  (ACY, 312)
+  (CMH, 312)
+  (DEN, 313)
+  (IND, 313)
+  (HUF, 315)
+  (ISP, 322)
+  (EWR, 325)
+  (JFK, 337)
+  (CYS, 341)
+  (IKK, 341)
+  (CLE, 343)
+  (AKR, 344)
+  (DPA, 352)
+  (HFD, 353)
+  (HPN, 353)
+  (DSM, 357)
+  (ALB, 362)
+  (DTW, 363)
+  (DET, 364)
+  (BUF, 370)
+  (CPR, 370)
+  (BOS, 374)
+  (GRR, 377)
+  (ART, 381)
+  (IAG, 394)
+  (BOI, 396)
+  (GRB, 404)
+  (BGR, 409)
+  (AUG, 412)
+  (DLH, 454)
+  (GEG, 465)
+  (GTF, 465)
+  (BFI, 477)
+  (BLI, 492)
+extract-min-key1: 233
+extract-min-key2: EYW
+list-by-key1: 
+  (ACY, 312)
+  (AEX, 154)
+  (AKR, 344)
+  (ALB, 362)
+  (AMA, 220)
+  (ART, 381)
+  (ATL, 189)
+  (AUG, 412)
+  (AUS, 126)
+  (BCT, 49)
+  (BFI, 477)
+  (BFM, 128)
+  (BGR, 409)
+  (BHM, 193)
+  (BLI, 492)
+  (BNA, 257)
+  (BOI, 396)
+  (BOS, 374)
+  (BRO, 31)
+  (BTR, 119)
+  (BUF, 370)
+  (BUR, 217)
+  (BWI, 302)
+  (CBM, 196)
+  (CHA, 233)
+  (CHS, 160)
+  (CIC, 305)
+  (CLE, 343)
+  (CLL, 136)
+  (CLT, 228)
+  (CMH, 312)
+  (CNM, 175)
+  (CNW, 154)
+  (COS, 296)
+  (CPR, 370)
+  (CRP, 61)
+  (CVG, 305)
+  (CYS, 341)
+  (DAL, 164)
+  (DAY, 302)
+  (DCA, 296)
+  (DEN, 313)
+  (DET, 364)
+  (DFW, 168)
+  (DLF, 112)
+  (DLH, 454)
+  (DMA, 170)
+  (DPA, 352)
+  (DRT, 104)
+  (DSM, 357)
+  (DTW, 363)
+  (DUG, 147)
+  (DYS, 174)
+  (EDW, 206)
+  (EFD, 115)
+  (ELP, 150)
+  (EWR, 325)
+  (FAT, 239)
+  (FFO, 304)
+  (FLL, 46)
+  (FMY, 56)
+  (FOE, 297)
+  (FTW, 163)
+  (FXE, 50)
+  (FYV, 252)
+  (GEG, 465)
+  (GLS, 107)
+  (GRB, 404)
+  (GRR, 377)
+  (GSB, 221)
+  (GTF, 465)
+  (GVT, 192)
+  (GVW, 280)
+  (GWO, 196)
+  (HFD, 353)
+  (HMN, 164)
+  (HOU, 103)
+  (HPN, 353)
+  (HRO, 254)
+  (HUF, 315)
+  (HWO, 53)
+  (IAB, 274)
+  (IAD, 292)
+  (IAG, 394)
+  (IAH, 100)
+  (IKK, 341)
+  (ILM, 213)
+  (IND, 313)
+  (INT, 249)
+  (ISP, 322)
+  (JAN, 172)
+  (JAX, 137)
+  (JBR, 232)
+  (JFK, 337)
+  (LAS, 251)
+  (LAX, 181)
+  (LBB, 185)
+list-by-key2: 
+  (BRO, 31)
+  (FLL, 46)
+  (BCT, 49)
+  (FXE, 50)
+  (HWO, 53)
+  (FMY, 56)
+  (CRP, 61)
+  (IAH, 100)
+  (HOU, 103)
+  (DRT, 104)
+  (GLS, 107)
+  (DLF, 112)
+  (EFD, 115)
+  (BTR, 119)
+  (AUS, 126)
+  (BFM, 128)
+  (CLL, 136)
+  (JAX, 137)
+  (DUG, 147)
+  (ELP, 150)
+  (AEX, 154)
+  (CNW, 154)
+  (CHS, 160)
+  (FTW, 163)
+  (DAL, 164)
+  (HMN, 164)
+  (DFW, 168)
+  (DMA, 170)
+  (JAN, 172)
+  (DYS, 174)
+  (CNM, 175)
+  (LAX, 181)
+  (LBB, 185)
+  (ATL, 189)
+  (GVT, 192)
+  (BHM, 193)
+  (CBM, 196)
+  (GWO, 196)
+  (EDW, 206)
+  (ILM, 213)
+  (BUR, 217)
+  (AMA, 220)
+  (GSB, 221)
+  (CLT, 228)
+  (JBR, 232)
+  (CHA, 233)
+  (FAT, 239)
+  (INT, 249)
+  (LAS, 251)
+  (FYV, 252)
+  (HRO, 254)
+  (BNA, 257)
+  (IAB, 274)
+  (GVW, 280)
+  (IAD, 292)
+  (COS, 296)
+  (DCA, 296)
+  (FOE, 297)
+  (BWI, 302)
+  (DAY, 302)
+  (FFO, 304)
+  (CIC, 305)
+  (CVG, 305)
+  (ACY, 312)
+  (CMH, 312)
+  (DEN, 313)
+  (IND, 313)
+  (HUF, 315)
+  (ISP, 322)
+  (EWR, 325)
+  (JFK, 337)
+  (CYS, 341)
+  (IKK, 341)
+  (CLE, 343)
+  (AKR, 344)
+  (DPA, 352)
+  (HFD, 353)
+  (HPN, 353)
+  (DSM, 357)
+  (ALB, 362)
+  (DTW, 363)
+  (DET, 364)
+  (BUF, 370)
+  (CPR, 370)
+  (BOS, 374)
+  (GRR, 377)
+  (ART, 381)
+  (IAG, 394)
+  (BOI, 396)
+  (GRB, 404)
+  (BGR, 409)
+  (AUG, 412)
+  (DLH, 454)
+  (GEG, 465)
+  (GTF, 465)
+  (BFI, 477)
+  (BLI, 492)
+extract-min-key1: 312
+extract-min-key2: BRO
+extract-min-key1: 154
+extract-min-key2: FLL
+extract-min-key1: 344
+extract-min-key2: BCT
+extract-min-key1: 362
+extract-min-key2: FXE
+list-by-key1: 
+  (AMA, 220)
+  (ART, 381)
+  (ATL, 189)
+  (AUG, 412)
+  (AUS, 126)
+  (BFI, 477)
+  (BFM, 128)
+  (BGR, 409)
+  (BHM, 193)
+  (BLI, 492)
+  (BNA, 257)
+  (BOI, 396)
+  (BOS, 374)
+  (BTR, 119)
+  (BUF, 370)
+  (BUR, 217)
+  (BWI, 302)
+  (CBM, 196)
+  (CHA, 233)
+  (CHS, 160)
+  (CIC, 305)
+  (CLE, 343)
+  (CLL, 136)
+  (CLT, 228)
+  (CMH, 312)
+  (CNM, 175)
+  (CNW, 154)
+  (COS, 296)
+  (CPR, 370)
+  (CRP, 61)
+  (CVG, 305)
+  (CYS, 341)
+  (DAL, 164)
+  (DAY, 302)
+  (DCA, 296)
+  (DEN, 313)
+  (DET, 364)
+  (DFW, 168)
+  (DLF, 112)
+  (DLH, 454)
+  (DMA, 170)
+  (DPA, 352)
+  (DRT, 104)
+  (DSM, 357)
+  (DTW, 363)
+  (DUG, 147)
+  (DYS, 174)
+  (EDW, 206)
+  (EFD, 115)
+  (ELP, 150)
+  (EWR, 325)
+  (FAT, 239)
+  (FFO, 304)
+  (FMY, 56)
+  (FOE, 297)
+  (FTW, 163)
+  (FYV, 252)
+  (GEG, 465)
+  (GLS, 107)
+  (GRB, 404)
+  (GRR, 377)
+  (GSB, 221)
+  (GTF, 465)
+  (GVT, 192)
+  (GVW, 280)
+  (GWO, 196)
+  (HFD, 353)
+  (HMN, 164)
+  (HOU, 103)
+  (HPN, 353)
+  (HRO, 254)
+  (HUF, 315)
+  (HWO, 53)
+  (IAB, 274)
+  (IAD, 292)
+  (IAG, 394)
+  (IAH, 100)
+  (IKK, 341)
+  (ILM, 213)
+  (IND, 313)
+  (INT, 249)
+  (ISP, 322)
+  (JAN, 172)
+  (JAX, 137)
+  (JBR, 232)
+  (JFK, 337)
+  (LAS, 251)
+  (LAX, 181)
+  (LBB, 185)
+list-by-key2: 
+  (HWO, 53)
+  (FMY, 56)
+  (CRP, 61)
+  (IAH, 100)
+  (HOU, 103)
+  (DRT, 104)
+  (GLS, 107)
+  (DLF, 112)
+  (EFD, 115)
+  (BTR, 119)
+  (AUS, 126)
+  (BFM, 128)
+  (CLL, 136)
+  (JAX, 137)
+  (DUG, 147)
+  (ELP, 150)
+  (CNW, 154)
+  (CHS, 160)
+  (FTW, 163)
+  (DAL, 164)
+  (HMN, 164)
+  (DFW, 168)
+  (DMA, 170)
+  (JAN, 172)
+  (DYS, 174)
+  (CNM, 175)
+  (LAX, 181)
+  (LBB, 185)
+  (ATL, 189)
+  (GVT, 192)
+  (BHM, 193)
+  (CBM, 196)
+  (GWO, 196)
+  (EDW, 206)
+  (ILM, 213)
+  (BUR, 217)
+  (AMA, 220)
+  (GSB, 221)
+  (CLT, 228)
+  (JBR, 232)
+  (CHA, 233)
+  (FAT, 239)
+  (INT, 249)
+  (LAS, 251)
+  (FYV, 252)
+  (HRO, 254)
+  (BNA, 257)
+  (IAB, 274)
+  (GVW, 280)
+  (IAD, 292)
+  (COS, 296)
+  (DCA, 296)
+  (FOE, 297)
+  (BWI, 302)
+  (DAY, 302)
+  (FFO, 304)
+  (CIC, 305)
+  (CVG, 305)
+  (CMH, 312)
+  (DEN, 313)
+  (IND, 313)
+  (HUF, 315)
+  (ISP, 322)
+  (EWR, 325)
+  (JFK, 337)
+  (CYS, 341)
+  (IKK, 341)
+  (CLE, 343)
+  (DPA, 352)
+  (HFD, 353)
+  (HPN, 353)
+  (DSM, 357)
+  (DTW, 363)
+  (DET, 364)
+  (BUF, 370)
+  (CPR, 370)
+  (BOS, 374)
+  (GRR, 377)
+  (ART, 381)
+  (IAG, 394)
+  (BOI, 396)
+  (GRB, 404)
+  (BGR, 409)
+  (AUG, 412)
+  (DLH, 454)
+  (GEG, 465)
+  (GTF, 465)
+  (BFI, 477)
+  (BLI, 492)
+extract-min-key1: 220
+extract-min-key2: HWO
+extract-min-key1: 381
+extract-min-key2: FMY
+extract-min-key1: 189
+extract-min-key2: CRP
+extract-min-key1: 412
+extract-min-key2: IAH
+extract-min-key1: 126
+extract-min-key2: HOU
+extract-min-key1: 477
+extract-min-key2: DRT
+extract-min-key1: 128
+extract-min-key2: GLS
+extract-min-key1: 409
+extract-min-key2: DLF
+extract-min-key1: 193
+extract-min-key2: EFD
+extract-min-key2: BTR
+extract-min-key1: 492
+extract-min-key1: 257
+extract-min-key1: 396
+extract-min-key1: 374
+extract-min-key1: 370
+extract-min-key1: 217
+extract-min-key1: 302
+extract-min-key1: 196
+extract-min-key1: 233
+extract-min-key1: 160
+extract-min-key2: CLL
+extract-min-key2: JAX
+extract-min-key2: DUG
+extract-min-key2: ELP
+extract-min-key2: CNW
+extract-min-key2: FTW
+extract-min-key2: DAL
+extract-min-key2: HMN
+extract-min-key2: DFW
+extract-min-key2: DMA
+extract-min-key1: 305
+extract-min-key1: 343
+extract-min-key1: 228
+extract-min-key1: 312
+extract-min-key1: 175
+extract-min-key1: 296
+extract-min-key1: 370
+extract-min-key1: 305
+extract-min-key1: 341
+extract-min-key1: 302
+extract-min-key2: JAN
+extract-min-key2: DYS
+extract-min-key2: LAX
+extract-min-key2: LBB
+extract-min-key2: GVT
+extract-min-key2: GWO
+extract-min-key2: EDW
+extract-min-key2: ILM
+extract-min-key2: GSB
+extract-min-key2: JBR
+extract-min-key1: 296
+extract-min-key1: 313
+extract-min-key1: 364
+extract-min-key1: 454
+extract-min-key1: 352
+extract-min-key1: 357
+extract-min-key1: 363
+extract-min-key1: 325
+extract-min-key1: 239
+extract-min-key1: 304
+extract-min-key2: INT
+extract-min-key2: LAS
+extract-min-key2: FYV
+extract-min-key2: HRO
+extract-min-key2: IAB
+extract-min-key2: GVW
+extract-min-key2: IAD
+extract-min-key2: FOE
+extract-min-key2: IND
+extract-min-key2: HUF
+extract-min-key1: 465
+extract-min-key2: ISP
+extract-min-key1: 404
+extract-min-key2: JFK
+extract-min-key1: 377
+extract-min-key2: IKK
+extract-min-key1: 465
+extract-min-key2: HFD
+extract-min-key1: 353
+extract-min-key2: IAG
+extract-min-key1: Failure due to exception: "Attempt to extract from an empty list"
+extract-min-key2: Failure due to exception: "Attempt to extract from an empty list"
+list-by-key1: 
+list-by-key2: 
+extract-min-key1: Failure due to exception: "Attempt to extract from an empty list"
+size: 0

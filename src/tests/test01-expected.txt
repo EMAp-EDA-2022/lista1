@@ -1,0 +1,39 @@
+insert(A, 5): successful
+list-by-key1: 
+  (A, 5)
+list-by-key2: 
+  (A, 5)
+insert(Z, 3): successful
+list-by-key1: 
+  (A, 5)
+  (Z, 3)
+list-by-key2: 
+  (Z, 3)
+  (A, 5)
+insert(A, 3): successful
+list-by-key1: 
+  (A, 3)
+  (A, 5)
+  (Z, 3)
+list-by-key2: 
+  (A, 3)
+  (Z, 3)
+  (A, 5)
+size: 3
+extract-min-key1: 3
+list-by-key1: 
+  (A, 5)
+  (Z, 3)
+list-by-key2: 
+  (Z, 3)
+  (A, 5)
+extract-min-key2: Z
+list-by-key1: 
+  (A, 5)
+list-by-key2: 
+  (A, 5)
+size: 1
+extract-min-key1: 5
+list-by-key1: 
+list-by-key2: 
+size: 0

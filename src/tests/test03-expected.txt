@@ -1,0 +1,109 @@
+insert(A, 1): successful
+insert(B, 2): successful
+insert(C, 3): successful
+insert(D, 4): successful
+insert(E, 5): successful
+insert(A, 2): successful
+insert(B, 3): successful
+insert(C, 4): successful
+insert(D, 5): successful
+insert(E, 1): successful
+insert(A, 3): successful
+insert(B, 4): successful
+insert(C, 5): successful
+insert(D, 1): successful
+insert(E, 2): successful
+size: 15
+list-by-key1: 
+  (A, 1)
+  (A, 2)
+  (A, 3)
+  (B, 2)
+  (B, 3)
+  (B, 4)
+  (C, 3)
+  (C, 4)
+  (C, 5)
+  (D, 1)
+  (D, 4)
+  (D, 5)
+  (E, 1)
+  (E, 2)
+  (E, 5)
+list-by-key2: 
+  (A, 1)
+  (D, 1)
+  (E, 1)
+  (A, 2)
+  (B, 2)
+  (E, 2)
+  (A, 3)
+  (B, 3)
+  (C, 3)
+  (B, 4)
+  (C, 4)
+  (D, 4)
+  (C, 5)
+  (D, 5)
+  (E, 5)
+extract-min-key1: 1
+extract-min-key2: D
+extract-min-key1: 2
+extract-min-key2: E
+extract-min-key1: 3
+extract-min-key2: B
+extract-min-key1: 3
+extract-min-key2: E
+size: 7
+list-by-key1: 
+  (B, 4)
+  (C, 3)
+  (C, 4)
+  (C, 5)
+  (D, 4)
+  (D, 5)
+  (E, 5)
+list-by-key2: 
+  (C, 3)
+  (B, 4)
+  (C, 4)
+  (D, 4)
+  (C, 5)
+  (D, 5)
+  (E, 5)
+extract-min-key1: 4
+extract-min-key2: C
+extract-min-key1: 4
+extract-min-key2: D
+extract-min-key1: 5
+extract-min-key2: D
+extract-min-key1: 5
+extract-min-key2: Failure due to exception: "Attempt to extract from an empty list"
+size: 0
+list-by-key1: 
+list-by-key2: 
+insert(A, 4): successful
+insert(B, 5): successful
+insert(C, 1): successful
+insert(D, 2): successful
+insert(E, 3): successful
+insert(A, 5): successful
+insert(B, 1): successful
+insert(C, 2): successful
+insert(D, 3): successful
+insert(E, 4): successful
+extract-min-key1: 4
+extract-min-key2: B
+extract-min-key1: 5
+extract-min-key2: C
+extract-min-key1: 5
+extract-min-key2: C
+extract-min-key1: 2
+extract-min-key2: D
+size: 2
+list-by-key1: 
+  (E, 3)
+  (E, 4)
+list-by-key2: 
+  (E, 3)
+  (E, 4)

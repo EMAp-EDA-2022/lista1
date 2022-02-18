@@ -1,0 +1,10 @@
+lista1.pdf
+.lista1.watcher_pid
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.out

@@ -1,0 +1,58 @@
+size: 0
+list-by-key1: 
+list-by-key2: 
+insert(BWI, 88): successful
+size: 1
+list-by-key1: 
+  (BWI, 88)
+list-by-key2: 
+  (BWI, 88)
+extract-min-key1: 88
+size: 0
+list-by-key1: 
+list-by-key2: 
+extract-min-key2: Failure due to exception: "Attempt to extract from an empty list"
+size: 0
+list-by-key1: 
+list-by-key2: 
+insert(LAX, 42): successful
+insert(IAD, 26): successful
+insert(DCA, 67): successful
+insert(JFK, 94): successful
+insert(BWI, 88): successful
+size: 5
+list-by-key1: 
+  (BWI, 88)
+  (DCA, 67)
+  (IAD, 26)
+  (JFK, 94)
+  (LAX, 42)
+list-by-key2: 
+  (IAD, 26)
+  (LAX, 42)
+  (DCA, 67)
+  (BWI, 88)
+  (JFK, 94)
+extract-min-key1: 88
+size: 4
+list-by-key1: 
+  (DCA, 67)
+  (IAD, 26)
+  (JFK, 94)
+  (LAX, 42)
+list-by-key2: 
+  (IAD, 26)
+  (LAX, 42)
+  (DCA, 67)
+  (JFK, 94)
+extract-min-key2: IAD
+size: 3
+list-by-key1: 
+  (DCA, 67)
+  (JFK, 94)
+  (LAX, 42)
+list-by-key2: 
+  (LAX, 42)
+  (DCA, 67)
+  (JFK, 94)
+size: 3

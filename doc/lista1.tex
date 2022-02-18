@@ -1,0 +1,147 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{enumitem}
+\usepackage{listings}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+% set the default code style
+\lstset{
+    language=C++,
+    frame=tb, % draw a frame at the top and bottom of the code block
+    tabsize=4, % tab space width
+    showstringspaces=false, % don't mark spaces in strings
+    numbers=none, % display line numbers on the left
+    commentstyle=\color{mygreen}, % comment color
+    keywordstyle=\color{blue}, % keyword color
+    stringstyle=\color{red}, % string color
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+\parindent0in
+\pagestyle{plain}
+\thispagestyle{plain}
+
+\newcommand{\assignment}{Lista 1}
+\newcommand{\duedate}{Março 6, 2022}
+
+
+% \renewcommand\thesubsection{\arabic{subsection}}
+
+\title{Lista 1}
+\date{}
+
+\begin{document}
+
+Fundação Getulio Vargas\hfill\\
+Estruturas de Dados\hfill\textbf{\assignment}\\
+Prof.\ Jorge Poco\hfill\textbf{Entrega:} \duedate\\
+\smallskip\hrule\bigskip
+
+{\let\newpage\relax\maketitle}
+\maketitle
+
+Este é um projeto inicial projetado para familiarizá-lo com o C++ e o processo de submissão que usaremos neste semestre.
+
+%%%%%%%
+% I'll ignore this, redundant
+%  This will involve only a small bit of data structure design and implementation, and the focus will be on reviewing Java programming and learning how to use our Gradescope testing environment.
+
+\paragraph{Dual List:}
+Você fornecerá uma implementação C++ de uma estrutura de dados que chamamos de \texttt{DualList}. Ela armazena um conjunto de entradas, cada uma das quais consiste em um par de valores, que chamamos de chaves (por exemplo, (idade, peso), (mês, ano), (país, população)).
+%
+A estrutura de dados é \emph{genérica}, o que significa que os tipos das duas chaves são especificados quando o estrutura é declarada. Segue a declaração:
+
+\begin{lstlisting}
+template <typename T1, typename T2>
+class DualList {
+...
+};
+\end{lstlisting}
+
+%%%%%
+% I'll ignore this, it doesn't make much sense with C++
+% The key types implement the Java interface Comparable, meaning that you can compare keys using compareTo. For example, to test x < y, you can do x.compareTo(y) < 0. This includes common object types such as String, Integer, Float, Double, and Character.
+%
+Por exemplo, \texttt{DualList<string, int>} armazena pares string-inteiro como ("Hello", 25) e \texttt{DualList<double, char>} armazena pares de caracteres duplos como (-23.57, 'X'). (Dentro os exemplos abaixo, vamos assumir pares string-inteiro.)
+
+
+Isso não é um \texttt{map} ou \texttt{dict} do Python. (Um mapa é uma estrutura de dados que armazena pares de valores-chave, onde cada chave é associado a um valor único.) É apenas uma coleção de pares. Por se tratar de um conjunto, a ordem dos elementos não importa e duplicatas são permitidas. Então as \texttt{DualLists} \{(A, 5), (Z,3), (A, 5)\} e \{(Z, 3), (A, 5), (A, 5)\} são as mesmas.
+
+A eficiência não é importante, e as entradas da lista podem ser armazenadas na ordem que você desejar. Você pode use quaisquer classes/funções das bibliotecas C++ que precise (\texttt{array}, \texttt{vector}).
+
+\paragraph{Operações:} Dada a lista dupla \texttt{DualList<T1, T2>}, aqui estão as operações que seu programa deve suportar (a pontuação de cada item está marcada no início):
+
+\begin{itemize}
+    \item (10) \texttt{DualList()}: Construtor, que apenas cria uma lista dupla vazia.
+    \item (30) \texttt{void Insert(T1 x1, T2 x2)}: Insere o par (x1 , x2 ) na lista dupla. Por exemplo, dado \{(A, 5), (Z, 3)\}, a operação \texttt{insert("A", 3)} resultaria na lista \{(A, 5), (Z, 3), (A, 3)\}. (A ordem das entradas não importa.)
+    \item (10) \texttt{int Size()}: Retorna o número de pares na DualList.
+    \item (15) \texttt{vector<string> ListByKey1()}: Retorna um vector de strings. A lista é para ser ordenados em ordem crescente pela primeira chave (com os empates desfeitos pela segunda chave). Cada \texttt{string} tem o formato "(" + key1 + ", " + key2 + ")". Por exemplo, dado \{(A, 5), (Z, 3), (A, 3)\}, isso retorna um vector de 3 elementos contendo três strings: "(A, 3)", "(A, 5)" e "(Z, 3)". Se a lista dupla estiver vazia, o vector resultante também está vazio.
+    \item (15) \texttt{vector<string> ListByKey2()}: Isso é idêntico a \texttt{listByKey1()} exceto que a ordem é pela segunda chave, com os empates desfeitos pela primeira chave. Por exemplo, no caso acima, o resultado é: "(A, 3)", "(Z, 3)" e "(A, 5)".
+    \item (10) \texttt{T2 ExtractMin1()}: Se a lista não estiver vazia, primeiro encontra o par com o mínimo valor de primeira chave x1 , ele remove esse par da lista e, finalmente, retorna seu associado valor da segunda chave. Assim como com \texttt{ListByKey1()}, os empates são quebrados pelo segundo valor da chave. Se o lista está vazia, isso lança uma exceção com a mensagem de erro "Tentativa de extrair de uma lista vazia". Por exemplo, dada a lista dupla \{(A, 5), (Z, 3), (A, 3)\}, ambos (A, 5) e (A, 3) tem o valor mínimo de primeira chave de A, e assim o empate é quebrado em favor do último pois 3 < 5. Em seguida, removemos (A, 3) da lista e retornamos seu valor de segunda chave de 3. Então, a lista agora contém \{(A, 5), (Z, 3)\}.
+    \item (10) \texttt{T1 ExtractMin2()}: Isso é idêntico ao \texttt{ExtractMin1}, mas com as funções de T1 e T2 invertido. Ele remove o par com o valor mínimo da segunda chave e retorna o valor associado da primeira chave. Ele lança a mesma exceção se a lista estiver vazia. Por exemplo, dada a lista dupla \{(A, 5), (Z, 3)\}, (Z, 3) tem o valor mínimo de segunda chave de 3, então removemos (Z, 3) da lista e retornamos seu valor de primeira chave de Z. Assim, a lista agora contém \{(A, 5)\}.
+    \end{itemize}
+
+Tudo que você precisa fazer é implementar as funções acima. Vamos fornecer um programa \texttt{tester.cpp} que lê uma entrada, executa os comandos utilizando a sua \texttt{DualList} e cria um outro documento com a saída. Uma amostra de entrada e saída é mostrada abaixo.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{l|l}
+Input:           & Output:                  \\
+insert:A:5       & insert(A, 5): successful \\
+insert:Z:3       & insert(Z, 3): successful \\
+insert:A:3       & insert(A, 3): successful \\
+size             & size: 3                  \\
+list-by-key1     & list-by-key1:            \\
+                 & (A, 3)                   \\
+                 & (A, 5)                   \\
+                 & (Z, 3)                   \\
+list-by-key      & list-by-key2:            \\
+                 & (A, 3)                   \\
+                 & (Z, 3)                   \\
+                 & (A, 5)                   \\
+extract-min-key1 & extract-min-key1: 3      \\
+extract-min-key2 & extract-min-key2: Z      \\
+list-by-key1     & list-by-key1:            \\
+                 & (A, 5)                  
+\end{tabular}
+\vspace{-0.5cm}
+\end{table}
+
+\paragraph{Atribuição:} Forneceremos um código básico para você começar através do Github Classroom. Esse código conterá a estrutura base da \texttt{DualList} e o código para testes. Tudo que você precisa fazer é preencher o conteúdo da classe no arquivo \texttt{dual\_list.hpp}. Observe que a estrutura foi configurada com cuidado. Você não deve alterá-lo a menos que saiba o que está fazendo.
+%
+Nós vamos avaliar seu trabalho utilizando o seguinte comando para compilar:
+\begin{itemize}
+    \item \texttt{g++ -std=c++11 tester.cc -o tester}
+\end{itemize}
+Caso o código não compile, a nota será 0.
+%
+Uma outra avaliação será o estilo do código. Você deve formatar seu código baseado no estilo recomendo pelo  Google, de acordo com a referência no seguinte \href{https://google.github.io/styleguide/cppguide.html}{link}. 
+%
+Utilizaremos \textit{cpplint} para verificar o seu código. A cada \textit{alerta} referente a formatação, será retirado 5 pontos da nota. Você também pode verificar com as instruções no \href{https://github.com/cpplint/cpplint}{link}. Para executar, em um terminal use o comando:  
+\begin{itemize}
+    \item \texttt{cpplint --extensions=cc,hpp,h --header=h --repository=. tester.cc dual\_list.h dual\_list.hpp}
+\end{itemize}
+
+\end{document}
