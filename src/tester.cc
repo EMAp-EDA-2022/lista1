@@ -24,65 +24,71 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
+#include <exception>
 #include "./dual_list.h"
 
+using std::vector;
+using std::cout;
+using std::cin;
 using std::endl;
 using std::ifstream;
 using std::ofstream;
 using std::to_string;
 using std::stringstream;
+using std::exception;
 
-string ProcessCommand(DualList<char, int> *DL, string input_line) {
+string ProcessCommand(DualList<string, int> *DL, string input_line) {
   string outputLine = "";
-  if (input_line == "size") {
-    int size = DL->Size();
-    outputLine = "size: " + to_string(size);
-  } else if (input_line == "list-by-key1") {
-    vector<string> res = DL->ListByKey1();
-    outputLine = "list-by-key1:\n";
-    for (auto & element : res) {
-      outputLine += "\t" + element + "\n";
+  try {
+      if (input_line == "size") {
+      int size = DL->Size();
+      outputLine = "size: " + to_string(size);
+    } else if (input_line == "list-by-key1") {
+      vector<string> res = DL->ListByKey1();
+      outputLine = "list-by-key1: ";
+      for (int i = 0; i < res.size(); i++) {
+        outputLine = outputLine + "\n  " + res[i];
+      }
+    } else if (input_line == "list-by-key2") {
+      vector<string> res = DL->ListByKey2();
+      outputLine = "list-by-key2: ";
+      for (int i = 0; i < res.size(); i++) {
+        outputLine = outputLine + "\n  " + res[i];
+      }
+    } else if (input_line == "extract-min-key1") {
+      string min_key1 = to_string(DL->ExtractMinKey1());
+      outputLine = "extract-min-key1: " + min_key1;
+    } else if (input_line == "extract-min-key2") {
+      string min_key2;
+      min_key2 = DL->ExtractMinKey2();
+      outputLine = "extract-min-key2: " + min_key2;
+    } else if (input_line.substr(0, 6) == "insert") {
+      stringstream ss(input_line);
+      string key1Val, key2Val;
+      getline(ss, key1Val, ':');
+      getline(ss, key1Val, ':');
+      getline(ss, key2Val, ':');
+      DL->Insert(key1Val, stoi(key2Val));
+      outputLine = "insert(" + key1Val + ", " + key2Val + "): successful";
     }
-  } else if (input_line == "list-by-key2") {
-    vector<string> res = DL->ListByKey2();
-    outputLine = "list-by-key1:\n";
-    for (auto & element : res) {
-      outputLine += "\t" + element + "\n";
-    }
-  } else if (input_line == "extract-min-key1") {
-    outputLine = "extract-min-key1: " + to_string(DL->ExtractMinKey1());
-  } else if (input_line == "extract-min-key2") {
-    outputLine = "extract-min-key2: " + to_string(DL->ExtractMinKey2());
-  } else if (input_line.substr(0, 6) == "insert") {
-    stringstream ss(input_line);
-    string key1Val, key2Val;
-    getline(ss, key1Val, ':');
-    getline(ss, key1Val, ':');
-    getline(ss, key2Val, ':');
-    DL->Insert(*key1Val.c_str(), stoi(key2Val));
-    outputLine = "insert(" + key1Val + ", " + key2Val + "): successful";
+  } catch (exception& e) {
+    outputLine += (input_line + ": Failure due to exception: \""
+      + e.what() + "\"");
   }
-
   return outputLine;
 }
 
-void RunTests(DualList<char, int> *DL, string input_file, string output_file) {
-  ifstream infile(input_file);
-  ofstream outfile(output_file, std::ios_base::app);
+void RunTests(DualList<string, int> *DL) {
   string line;
-  while (infile >> line) {
+  while (cin >> line) {
     string outputLine = ProcessCommand(DL, line);
-    outfile << outputLine << endl;
+    cout << outputLine << endl;
   }
-  infile.close();
-  outfile.close();
 }
 
 int main() {
-  DualList<char, int> DL;
-  string inputFile = "tests/test01-input.txt";
-  string outputFile = "tests/test01-output.txt";
-  RunTests(&DL, inputFile, outputFile);
+  DualList<string, int> DL;
+  RunTests(&DL);
 
   return 0;
 }

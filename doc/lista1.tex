@@ -33,6 +33,7 @@
     stringstyle=\color{red}, % string color
     backgroundcolor=\color{black!5}, % set backgroundcolor
     basicstyle=\footnotesize,% basic font setting
+    literate = {-}{-}1, % <------ trick for '-' in shell commands
 }
 
 \parindent0in
@@ -132,20 +133,34 @@ list-by-key1     & list-by-key1:            \\
 \paragraph{Atribuição:} Forneceremos um código básico para você começar através do Github Classroom. Esse código conterá a estrutura base da \texttt{DualList} e o código para testes. Tudo que você precisa fazer é preencher o conteúdo da classe no arquivo \texttt{dual\_list.hpp}. Observe que a estrutura foi configurada com cuidado. Você não deve alterá-lo a menos que saiba o que está fazendo.
 %
 Nós vamos avaliar seu trabalho utilizando o seguinte comando para compilar:
-\begin{itemize}
-    \item \texttt{g++ -std=c++11 tester.cc -o tester}
-\end{itemize}
+\begin{lstlisting}[language=bash]
+g++ -std=c++11 tester.cc -o tester
+\end{lstlisting}
+
 Caso o código não compile, a nota será 0.
-%
+Após a compilação, nós iremos realizar testes baseados em arquivos de texto (que estão dentro da pasta \texttt{src/tests}), utilizaremos o comando:
+
+\begin{lstlisting}[language=bash]
+./tester <tests/test01-input.txt >tests/test01-output.txt
+\end{lstlisting}
+    
+Com isso, será gerado um arquivo dentro da pastas tests de output, você deve comparar o \texttt{tests/test01-output.txt} com o arquivo \texttt{tests/test01-expected.txt} com o comando:
+
+\begin{lstlisting}[language=bash]
+diff tests/test01-output.txt tests/test01-expected.txt
+\end{lstlisting}
+
+Nós iremos considerar como um erro caso o comando \texttt{diff} aponte diferenças entre os arquivos (incluindo espaços em branco). 
+O número 01 pode ser trocado por 02, 03 e 04 para testar com os outros arquivos de teste. O arquivo \texttt{tester.cc} foi atualizado no dia 27/02, por favor obtenha a versão atualizada no repositório \url{https://github.com/EMAp-EDA-2022/lista1}.
+
 Uma outra avaliação será o estilo do código. Você deve formatar seu código baseado no estilo recomendo pelo  Google, de acordo com a referência no seguinte \href{https://google.github.io/styleguide/cppguide.html}{link}. 
 %
 Utilizaremos \textit{cpplint} para verificar o seu código. A cada \textit{alerta} referente a formatação, será retirado 5 pontos da nota. Você também pode verificar com as instruções no \href{https://github.com/cpplint/cpplint}{link}. Para executar, em um terminal use o comando:  
-\begin{itemize}
-    \item \texttt{cpplint --extensions=cc,hpp,h --header=h --repository=. tester.cc dual\_list.h dual\_list.hpp}
-\end{itemize}
 
-Vocês vão realizar a tarefa através do Github Classroom, cada um vai obter o seu repositório individual. 
-%
-Quando terminar a tarefa, você deve adicionar uma \textit{TAG} com o nome de \textit{FINAL} até às 23:59 de 6 de março.
+\begin{lstlisting}[language=bash]
+cpplint --extensions=cc,hpp,h --header=h --repository=. tester.cc dual_list.h dual_list.hpp
+\end{lstlisting}
+
+
 
 \end{document}
